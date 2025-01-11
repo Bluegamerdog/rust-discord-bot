@@ -19,7 +19,7 @@ impl EventHandler for Handler {
             // of permissions to post in the channel, so log to stdout when some error happens,
             // with a description of it.
 
-            // Playing with .reply
+            // Playing with .reply | Github test
             if let Err(why) = msg.reply(&ctx.http, "Pong!").await {
                 println!("Error replying message: {why:?}");
             }
